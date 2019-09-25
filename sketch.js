@@ -1,10 +1,13 @@
 function setup() {
   createCanvas(400, 400);
+
+  console.log(roster[1]);
 }
 
 function draw() {
   background(220);
   ellipse(200, 200, 200);
+  
 }
 
 var roster = [{
