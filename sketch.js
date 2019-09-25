@@ -1,13 +1,12 @@
 function setup() {
   createCanvas(400, 400);
-
-  console.log(roster[1]);
+  console.log(roster[1].firstName + " " + roster[1].lastName);
 }
 
 function draw() {
-  background(220);
-  ellipse(200, 200, 200);
-  
+  //background(220);
+  //ellipse(200, 200, 200);
+
 }
 
 var roster = [{
@@ -106,7 +105,7 @@ var roster = [{
       lastName: "Vedanthi",
       color: "Blue",
       animal: "Crow",
-      book: "Of Mice and Men".
+      book: "Of Mice and Men",
       movie: "American Psycho",
       game: "Fruit Ninja" ,
       superHero: "Batman" ,
