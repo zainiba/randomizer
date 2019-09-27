@@ -1,6 +1,6 @@
 let randomIndex;
 let favoriteThing = ["book", "movie", "animal", "color", "game", "superHero"];
-let animating = true;
+let animating = false;
 let num = 0;
 let beginning = true;
 let sizze = 50;
@@ -24,7 +24,7 @@ function draw() {
     }
 
     }
-  
+
 
 
 function randomizer(){
@@ -40,11 +40,11 @@ function randomizer(){
   let thisThing = random(favoriteThing);
   text(roster[randomIndex].firstName + " " + roster[randomIndex].lastName, windowWidth/2, windowHeight/2);
   fill(random(0, 255), random(0, 255), random(0, 255));
-  stroke(random(0, 255), random(0, 255), random(0, 255));
+   stroke(0);
   textSize(70);
   text("\nFavorite " + thisThing + ":", windowWidth/2, windowHeight/1.8);
   fill(random(0, 255), random(0, 255), random(0, 255));
-  stroke(random(0, 255), random(0, 255), random(0, 255));
+  // stroke(random(0, 255), random(0, 255), random(0, 255));
   textSize(70);
   text(random([roster[randomIndex][thisThing]]), windowWidth/2, windowHeight/1.4);
   roster.splice(randomIndex, 1);
