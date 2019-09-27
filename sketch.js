@@ -3,6 +3,7 @@ let favoriteThing = ["book", "movie", "animal", "color", "game", "superHero"];
 let animating = true;
 let num = 0;
 let beginning = true;
+let sizze = 50;
 
 function setup() {
   createCanvas(400, 400);
@@ -14,28 +15,17 @@ function setup() {
 }
 
 function draw() {
-  if(animating == true){
-    fill(random(0, 255), random(0, 255), random(0, 255));
-    //stroke(random(0, 255), random(0, 255), random(0, 255));
-    //ellipse(random(width), random(height), random(50, 200));
-    //rect(random(width), random(height), random(50, 200), random(50, 200));
-    if(num != 400){
-      rect(0, 0, 400-num, 400-num);
-      //rect(200, 200, 400-num, 400-num);
-      //rect(0, 200, 400-num, 400-num);
-      //rect(200, 0, 400-num, 400-num);
-      num=num+10;
+    if (animating == true) {
+      fill(random(200), random(0), random(20), 75)
+      ellipse(random(width), random(height), sizze,)
+      sizze = sizze+5;
+    } else {
+      sizze = 0;
     }
-    if(num == 400 && beginning){
-      push();
-      fill(0);
-      stroke(255);
-      strokeWeight(5);
-      text("Click to randomize", windowWidth/2, windowHeight/2);
-      pop();
+
     }
-  }
-}
+  
+
 
 function randomizer(){
   animating = false;
